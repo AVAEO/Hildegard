@@ -1,0 +1,18 @@
+@model List<Htest.Models.HClass>
+
+
+<div class="text-center">
+    <h1 class="display-4">Display Classes</h1>
+        @foreach (var Class in Model)
+        {
+            <u1 class="list-group list-group-horizontal">
+
+                    <li class = "list-group-item flex-fill"> 
+                        @Class.Name
+                    </li>
+
+            </u1>
+
+        }
+   
+</div>

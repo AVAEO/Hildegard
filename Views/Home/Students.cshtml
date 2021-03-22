@@ -1,0 +1,30 @@
+@using Htest.Models
+@model List<Student>
+
+
+<div class="text-center">
+    <h1 class="display-4">Display Students</h1>
+         @foreach (var student in Model)
+        {
+            <u1 class="list-group list-group-horizontal">
+
+                    <li class = "list-group-item flex-fill"> 
+                        @student.firstName
+                    </li>
+                    <li class = "list-group-item flex-fill"> 
+                        @student.secondName
+                    </li>
+                     <li class = "list-group-item flex-fill"> 
+                        @student.yearGroup
+                    </li>
+                    
+
+            </u1>
+
+        }
+   
+</div>
+
+
+
+

@@ -1,0 +1,94 @@
+﻿
+@model String
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+
+.btn.btn-primary {
+  background-color: #5c4084;
+  border-color: #5c4084;
+  outline: none;
+}
+.btn.btn-primary:hover {
+  background-color: #442f62;
+  border-color: #442f62;
+}
+.btn.btn-primary:active, .btn.btn-primary:focus {
+  background-color: #684895;
+  border-color: #684895;
+}
+
+.input-group-text {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+button.browse {
+    border-left: none;
+    border-radius: 0;
+}
+
+button#btn-submit {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.dummy-file-input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none;
+}
+</style>
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" >
+        <div class="form-group">
+            <div class="input-group shadow">
+                <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
+                <input type="file" name="xlsfile" class="d-none" id="inputFile">
+                <input name="test" type="text" class="form-control form-control-lg dummy-file-input" placeholder="Upload Excel File" onclick="document.getElementById('inputFile').click()" style="cursor: pointer;" >
+                <button class="browse btn btn-primary px-4" type="button" onclick="document.getElementById('inputFile').click()"><i class="fas fa-image"></i> Browse</button>
+                <button id="btn-submit" class="btn btn-success" type="submit"><i class="fas fa-upload"></i> Upload</button> 
+            </div>
+             
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+
+    function getExtension(filename) {
+        return filename.split('.').pop().toLowerCase();
+    }
+    $(document).ready(function() {
+        $('#inputFile').change(function(e){
+            //https://www.tutorialrepublic.com/faq/how-to-get-selected-file-name-from-input-type-file-using-jquery.php
+            const fileName = e.target.files[0].name;
+            const extension = getExtension(fileName);
+            if (extension === "xlsx") {
+                $(".dummy-file-input").val(fileName);
+            }
+            else {
+                alert("You must upload an excel file with a .xlsx extension");
+                $(this).attr("value", "");
+            }
+            
+        }); 
+
+        $("#btn-submit").click(function(e) {
+            const inputTarget = $(".dummy-file-input")
+            const fileName =inputTarget.val();
+            if (fileName === "" || fileName === undefined) {
+                e.preventDefault();
+                alert("You must select a file")
+                return
+            }
+        });
+    });
+    </script>
+}

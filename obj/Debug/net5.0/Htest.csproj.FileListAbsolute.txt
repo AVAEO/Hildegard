@@ -1,0 +1,130 @@
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\appsettings.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.exe
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.deps.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.runtimeconfig.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.runtimeconfig.dev.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\ref\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.Views.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\bin\Debug\net5.0\Htest.Views.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.csprojAssemblyReference.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.AssemblyInfoInputs.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.AssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.csproj.CoreCompileInputs.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.RazorAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.RazorAssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\staticwebassets\Htest.StaticWebAssets.Manifest.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\staticwebassets\Htest.StaticWebAssets.xml
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\scopedcss\bundle\Htest.styles.css
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.TagHelpers.input.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.TagHelpers.output.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.RazorCoreGenerate.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.RazorTargetAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.RazorTargetAssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.Views.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\ref\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.genruntimeconfig.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest\obj\Debug\net5.0\Htest.csproj.CopyComplete
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\appsettings.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.exe
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.deps.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.runtimeconfig.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.runtimeconfig.dev.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\ref\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.Views.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Htest.Views.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.csprojAssemblyReference.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.AssemblyInfoInputs.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.AssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.csproj.CoreCompileInputs.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.RazorAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.RazorAssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\staticwebassets\Htest.StaticWebAssets.Manifest.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\staticwebassets\Htest.StaticWebAssets.xml
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\scopedcss\bundle\Htest.styles.css
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.TagHelpers.input.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.TagHelpers.output.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.RazorCoreGenerate.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.RazorTargetAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.RazorTargetAssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.Views.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\ref\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.genruntimeconfig.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Htest.csproj.CopyComplete
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\Home\Students.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\EPPlus.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Htest - Copy\obj\Debug\net5.0\Razor\Views\Home\Teachers.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\appsettings.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.exe
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.deps.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.runtimeconfig.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.runtimeconfig.dev.json
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\ref\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.Views.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Htest.Views.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\EPPlus.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.csprojAssemblyReference.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.AssemblyInfoInputs.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.AssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.csproj.CoreCompileInputs.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.RazorAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.RazorAssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\staticwebassets\Htest.StaticWebAssets.Manifest.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\staticwebassets\Htest.StaticWebAssets.xml
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\scopedcss\bundle\Htest.styles.css
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.TagHelpers.input.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.TagHelpers.output.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.RazorCoreGenerate.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Home\Students.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Home\Teachers.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.RazorTargetAssemblyInfo.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.RazorTargetAssemblyInfo.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.Views.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.csproj.CopyComplete
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\ref\Htest.dll
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.pdb
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Htest.genruntimeconfig.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Teacher\Index.cshtml.g.cs
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Teacher\Upload.cshtml.g.cs

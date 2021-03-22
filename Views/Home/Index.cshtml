@@ -1,0 +1,17 @@
+﻿@model List<Htest.Models.HClass> 
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <ul class = "list-group">
+        @foreach (var hclass in Model)
+        {
+           <li class = "list-group-item">
+                @hclass.Name
+           </li> 
+        }
+    </ul>
+</div>
