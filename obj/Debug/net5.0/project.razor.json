@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj",
+  "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,53 +15603,53 @@
   "RootNamespace": "Htest",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Home\\Teachers.cshtml",
-      "TargetPath": "Views\\Home\\Teachers.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Teacher\\Index.cshtml",
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\Index.cshtml",
       "TargetPath": "Views\\Teacher\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Teacher\\Upload.cshtml",
-      "TargetPath": "Views\\Teacher\\Upload.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\Home\\Students.cshtml",
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Home\\Students.cshtml",
       "TargetPath": "Views\\Home\\Students.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Home\\Teachers.cshtml",
+      "TargetPath": "Views\\Home\\Teachers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\Upload.cshtml",
+      "TargetPath": "Views\\Teacher\\Upload.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj": {}
+    "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj": {
+    "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj",
+        "projectUniqueName": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj",
         "projectName": "Htest",
-        "projectPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj",
+        "projectPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj",
         "packagesPath": "C:\\Users\\bensc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\obj\\",
+        "outputPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bensc\\AppData\\Roaming\\NuGet\\NuGet.Config"
