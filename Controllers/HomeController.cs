@@ -15,33 +15,7 @@ namespace Htest.Controllers
     {
         public IActionResult Index()
         {
-            List<HClass> classes = new List<HClass>();
-
-            HClass class1 = new HClass {
-                Id = 0,
-                Name = "L6CS",
-                Teacher = "Mr Packwood"
-            };
-            classes.Add(class1);
-             HClass class2 = new HClass {
-                Id = 1,
-                Name = "7XP",
-                Teacher = "Ms Andrews"
-            };
-            classes.Add(class2);
-             HClass class3 = new HClass {
-                Id = 2,
-                Name = "9XL",
-                Teacher = "Mr depldge"
-            };
-            classes.Add(class3);
-             HClass class4 = new HClass {
-                Id = 3,
-                Name = "U6CS",
-                Teacher = "Mrs Ryalls"
-            };
-            classes.Add(class4);
-            return View(classes);
+            return View();
         }
 
         public IActionResult Students()
