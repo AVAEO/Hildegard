@@ -4488,11 +4488,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj",
+      "projectUniqueName": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj",
       "projectName": "Htest",
-      "projectPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Htest.csproj",
+      "projectPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\Htest.csproj",
       "packagesPath": "C:\\Users\\bensc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\obj\\",
+      "outputPath": "C:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard - Backup\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bensc\\AppData\\Roaming\\NuGet\\NuGet.Config"
