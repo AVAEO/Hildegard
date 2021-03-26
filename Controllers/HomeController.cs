@@ -17,7 +17,6 @@ namespace Htest.Controllers
         {
             return View();
         }
-
         public IActionResult Students()
         {
             List<List<string>> studentLines = ReadDataFromExcel(1);
@@ -74,9 +73,7 @@ namespace Htest.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        } 
-            
-        
+        }  
         public static List<List<string>> ReadDataFromExcel(int sheet)
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;

@@ -102,9 +102,6 @@ namespace Htest.Data{
             else{
                 return null;
             }
-
-            
-
         }
         public List<Teacher> GetAllTeachers(){
         

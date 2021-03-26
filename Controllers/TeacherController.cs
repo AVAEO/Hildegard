@@ -24,9 +24,9 @@ namespace Htest.Controllers
             List<HClass> classes = helper.GetAllClassesForTeacher(teacherName);
             List<Student> students = helper.GetStudentsForClass(className);
             return View(classes);
-        }       
-
-                [HttpGet]
+        }     
+         
+        [HttpGet]
         public IActionResult Upload(string id="")
         {
              ViewBag.Success = TempData["success"];
@@ -69,8 +69,6 @@ namespace Htest.Controllers
             return View();
   
         }
-
-
         public class HookData {
             public string status {get; set;}
         }
