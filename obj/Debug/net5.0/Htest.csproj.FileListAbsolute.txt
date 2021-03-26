@@ -174,3 +174,4 @@ C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard - Backup\obj\Debug\net5.
 C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard - Backup\obj\Debug\net5.0\ref\Htest.dll
 C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard - Backup\obj\Debug\net5.0\Htest.pdb
 C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard - Backup\obj\Debug\net5.0\Htest.genruntimeconfig.cache
+C:\Users\bensc\OneDrive\Documents\CS Projects\Hildegard\obj\Debug\net5.0\Razor\Views\Teacher\IndexOld.cshtml.g.cs

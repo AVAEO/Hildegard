@@ -15648,6 +15648,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\IndexOld.cshtml",
+      "TargetPath": "Views\\Teacher\\IndexOld.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

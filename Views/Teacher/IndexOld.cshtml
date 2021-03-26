@@ -1,0 +1,26 @@
+@* @using Htest.Controllers
+@model StudentClassesDTO
+
+
+<div class="text-center">
+    <form method="POST">
+        <input type="text" name="Teacher" class="" id="TeacherInput" placeholder="Input Teacher Name">
+        <select class="" id="Name" name="ClassRef">
+        @foreach (var Class in Model.classes)
+        {
+            <option val=@Class.Name>
+                @Class.Name
+            </option>
+        }         
+        </select>
+        <button id="btn-submit" class="btn btn-success" type="submit"> Submit </button>   
+    </form>
+    
+    @if (Model.students != null){
+        @foreach (var student in Model.students)
+        {
+           <div> @student.firstName @student.secondName </div>
+        }
+    }
+    
+</div> *@
