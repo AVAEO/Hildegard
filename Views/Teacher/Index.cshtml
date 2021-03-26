@@ -1,19 +1,25 @@
-@using Htest.Models
-@model List<HClass>
+@using Htest.Controllers
+@model StudentClassesDTO
 
 
 <div class="text-center">
-    <h1 class="display-4">Display Classes</h1>
-         @foreach (var Class in Model)
+    <form method="POST">
+        <select class="" id="Name" name="ClassRef">
+        @foreach (var Class in Model.classes)
         {
-            <u1 class="list-group list-group-horizontal">
-
-                    <li class = "list-group-item flex-fill"> 
-                        @Class.Name
-                    </li>
-
-            </u1>
-
+            <option val=@Class.Name>
+                @Class.Name
+            </option>
+        }         
+        </select>
+        <button id="btn-submit" class="btn btn-success" type="submit"> Submit </button>   
+    </form>
+    
+    @if (Model.students != null){
+        @foreach (var student in Model.students)
+        {
+           <div> @student.firstName @student.secondName </div>
         }
-   
+    }
+    
 </div>

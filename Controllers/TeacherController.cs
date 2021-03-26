@@ -13,18 +13,36 @@ using Htest.Data;
 
 namespace Htest.Controllers
 {
+    public class StudentClassesDTO{
+        public List<HClass> classes {get;set;}
+        public List<Student> students{get;set;}
+    }
     public class TeacherController : Controller
     {
         string teacherName = @"Adrian Blacker";
-        string className = @"7RED/Ar";
+        //string className = @"7RED/Ar";
+
+        [HttpGet]
         public IActionResult Index()
         {
             var helper = new ExcelHelper();
-            var teachers = helper.GetAllTeachers();
+            var SClassDTO = new StudentClassesDTO();
             List<HClass> classes = helper.GetAllClassesForTeacher(teacherName);
-            List<Student> students = helper.GetStudentsForClass(className);
-            return View(classes);
+            SClassDTO.classes = classes;
+            SClassDTO.students = null;
+            return View(SClassDTO);
         }     
+
+        [HttpPost]
+        public IActionResult Index(string ClassRef){
+            var SClassDTO = new StudentClassesDTO();
+            var helper = new ExcelHelper();
+            List<HClass> classes = helper.GetAllClassesForTeacher(teacherName);
+            List<Student> students = helper.GetStudentsForClass(ClassRef);
+            SClassDTO.classes = classes;
+            SClassDTO.students = students;
+            return View(SClassDTO);
+        }
          
         [HttpGet]
         public IActionResult Upload(string id="")

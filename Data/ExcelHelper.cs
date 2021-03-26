@@ -1,23 +1,21 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Htest.Models;
-using System.IO;
+using System.Text;
+// using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+// using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
+using System.IO;
+using Htest.Models;
 
-namespace Htest.Data{
-    
-    public class ExcelHelper{
-        private string filepath = @"Hildegard Test Data v2.xlsx";
-        public List<List<string>> ReadData(int sheet)
+namespace Htest.Data
+{
+    public class ExcelHelper
+    {
+        public List<List<string>> ReadDataFromExcel(int sheet)
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             //provide file path
-            FileInfo existingFile = new FileInfo(filepath);
+            FileInfo existingFile = new FileInfo(@"Hildegard Test Data v2.xlsx");
             //use EPPlus
             using (ExcelPackage package = new ExcelPackage(existingFile))
             {
@@ -40,72 +38,70 @@ namespace Htest.Data{
             }
         }
 
-    public List<HClass> GetAllClassesForTeacher(string name){
-        
-            var teacherLines = ReadData(0);
-            //List<Teacher> teachers = new List<Teacher>();
-            if (teacherLines != null)
-            {
-                List<HClass> teacherClasses = new List<HClass>();
-                foreach (var line in teacherLines)
-                {    
-                    if (line != null){
-                        
-                        if (name == line[0])
-                        {
-                            var reference = line[1];
-                            //Guid ID = Guid.NewGuid();
-                            int ID = 0;
-                            HClass TeacherClass = new HClass{                  
-                                Id = ID,
-                                Name = reference,
-                                Teacher = name,
-                            };
-                            teacherClasses.Add(TeacherClass); 
-                        }   
-                    }                    
-                }
-                return teacherClasses;
-            }
-            else{
-                return null;
-            }
 
+        public List<List<string>> ReadTeacherFromExcel(int sheet, string name)
+        {
+            //ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //provide file path
+            FileInfo existingFile = new FileInfo(@"Hildegard Test Data v2.xlsx");
+            //use EPPlus
+            using (ExcelPackage package = new ExcelPackage(existingFile))
+            {
+                //get the first worksheet in the workbook
+                ExcelWorksheet worksheet = package.Workbook.Worksheets[sheet];
+                int colCount = worksheet.Dimension.End.Column;  //get Column Count
+                int rowCount = worksheet.Dimension.End.Row;     //get row count
+                List<List<string>> data = new List<List<string>>();
+                for (int row = 1; row <= rowCount; row++)
+                {
+                    List<string> rowData = new List<string>();
+                    for (int col = 1; col <= colCount; col++)
+                    {
+                        string tileData = worksheet.Cells[row, col].Value?.ToString().Trim();
+                        rowData.Add(tileData);
+                    }  
+                    if (rowData.Contains(name)) {
+                        data.Add(rowData);
+                    }
+                    
+                }
+                return data;
+            }
         }
 
-        public List<Student> GetStudentsForClass(string classReference){
-            var studentLines = ReadData(1);
-            if (studentLines != null)
-            {
-                List<Student> students = new List<Student>();
-                foreach (var line in studentLines)
-                {
-                    if (line != null)
-                    {
-                        if (classReference == line[3])
-                        {
-                            Student student = new Student{                  
-                                ID = line[0],
-                                firstName = line[1],
-                                secondName = line[2],
-                                //references = references,
-                                //subjects = subjects,
-                                yearGroup = line[5]
-                                };
 
-                            students.Add(student);
-                        }
+        public List<List<string>> ReadStudentsFromExcel(int sheet, string classRef)
+        {
+            //ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //provide file path
+            FileInfo existingFile = new FileInfo(@"Hildegard Test Data v2.xlsx");
+            //use EPPlus
+            using (ExcelPackage package = new ExcelPackage(existingFile))
+            {
+                //get the first worksheet in the workbook
+                ExcelWorksheet worksheet = package.Workbook.Worksheets[sheet];
+                int colCount = worksheet.Dimension.End.Column;  //get Column Count
+                int rowCount = worksheet.Dimension.End.Row;     //get row count
+                List<List<string>> data = new List<List<string>>();
+                for (int row = 1; row <= rowCount; row++)
+                {
+                    List<string> rowData = new List<string>();
+                    for (int col = 1; col <= colCount; col++)
+                    {
+                        string tileData = worksheet.Cells[row, col].Value?.ToString().Trim();
+                        rowData.Add(tileData);
+                    }  
+                    if (rowData.Contains(classRef)) {
+                        data.Add(rowData);
                     }
+                    
                 }
-                return students;
-            }
-            else{
-                return null;
+                return data;
             }
         }
         public List<Teacher> GetAllTeachers(){
         
-            var teacherLines = ReadData(0);
+            var teacherLines = ReadDataFromExcel(0);
             List<Teacher> teachers = new List<Teacher>();
             if (teacherLines != null)
             {
@@ -148,6 +144,74 @@ namespace Htest.Data{
             }
 
         }
+
+        public List<Student> GetStudentsForClass(string classReference){
+            var studentLines = ReadDataFromExcel(1);
+            if (studentLines != null)
+            {
+                List<Student> students = new List<Student>();
+                foreach (var line in studentLines)
+                {
+                    if (line != null)
+                    {
+                        if (classReference == line[3])
+                        {
+                            Student student = new Student{                  
+                                ID = line[0],
+                                firstName = line[1],
+                                secondName = line[2],
+                                //references = references,
+                                //subjects = subjects,
+                                yearGroup = line[5]
+                                };
+
+                            students.Add(student);
+                        }
+                    }
+                }
+                return students;
+            }
+            else{
+                return null;
+            }
+        }
+
+        public List<HClass> GetAllClassesForTeacher(string name){
         
+            var teacherLines = ReadDataFromExcel(0);
+            //List<Teacher> teachers = new List<Teacher>();
+            if (teacherLines != null)
+            {
+                List<HClass> teacherClasses = new List<HClass>();
+                foreach (var line in teacherLines)
+                {    
+                    if (line != null){
+                        
+                        if (name == line[0])
+                        {
+                            var reference = line[1];
+                            //Guid ID = Guid.NewGuid();
+                            int ID = 0;
+                            HClass TeacherClass = new HClass{                  
+                                Id = ID,
+                                Name = reference,
+                                Teacher = name,
+                            };
+                            teacherClasses.Add(TeacherClass); 
+                        }   
+                    }                    
+                }
+                return teacherClasses;
+            }
+            else{
+                return null;
+            }
+
+        }
+
+
+
+         
+
     }
 }
