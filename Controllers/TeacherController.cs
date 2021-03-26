@@ -17,9 +17,14 @@ namespace Htest.Controllers
         public List<HClass> classes {get;set;}
         public List<Student> students{get;set;}
     }
+
+    public class TeacherSubmitDTO{
+        public string ClassRef{get;set;}
+        public string Teacher{get;set;}
+    }
     public class TeacherController : Controller
     {
-        string teacherName = @"Adrian Blacker";
+        string teacherName = @"Adrian Blacker"; 
         //string className = @"7RED/Ar";
 
         [HttpGet]
@@ -34,11 +39,11 @@ namespace Htest.Controllers
         }     
 
         [HttpPost]
-        public IActionResult Index(string ClassRef){
+        public IActionResult Index(TeacherSubmitDTO data){
             var SClassDTO = new StudentClassesDTO();
             var helper = new ExcelHelper();
-            List<HClass> classes = helper.GetAllClassesForTeacher(teacherName);
-            List<Student> students = helper.GetStudentsForClass(ClassRef);
+            List<HClass> classes = helper.GetAllClassesForTeacher(data.Teacher); //sub out data.Teacher for teacherName if you want hard-coded value
+            List<Student> students = helper.GetStudentsForClass(data.ClassRef);
             SClassDTO.classes = classes;
             SClassDTO.students = students;
             return View(SClassDTO);
