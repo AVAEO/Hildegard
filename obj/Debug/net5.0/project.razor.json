@@ -15633,6 +15633,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\IndexV2.cshtml",
+      "TargetPath": "Views\\Teacher\\IndexV2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\IndexV1.cshtml",
+      "TargetPath": "Views\\Teacher\\IndexV1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15648,8 +15658,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\IndexOld.cshtml",
-      "TargetPath": "Views\\Teacher\\IndexOld.cshtml",
+      "FilePath": "c:\\Users\\bensc\\OneDrive\\Documents\\CS Projects\\Hildegard\\Views\\Teacher\\Select.cshtml",
+      "TargetPath": "Views\\Teacher\\Select.cshtml",
       "FileKind": "mvc"
     },
     {

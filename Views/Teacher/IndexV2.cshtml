@@ -1,0 +1,82 @@
+@* @using Htest.Controllers
+@model StudentClassesDTO
+
+
+<style>
+    #selection-students-wrapper .list-group-item {
+        display: flex;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+ 
+    #selection-students-wrapper .list-group-item:hover {
+       background-color: #fafafa;
+    }
+ 
+    #selection-students-wrapper .avatar {
+        height: 32px;
+        width: 32px;
+        border-radius: 100%;
+        background-color: #2196f3;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    #selection-students-wrapper .student-achievement-button,
+    #selection-students-wrapper .student-endeavour-button {
+        color: #bbb;
+        cursor: pointer;
+    }
+ 
+    #selection-students-wrapper .student-achievement-button:hover,
+    #selection-students-wrapper .student-endeavour-button:hover {
+        color:  #2196f3;
+    }
+ 
+</style>
+ 
+<div class="text-center">
+    <h1 class="display-4">Select Awards</h1>
+    <form method="POST">
+        <div class="form-row align-items-center justify-content-end mb-4">
+            <div class="col-9 col-md-5 col-lg-3 my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Class Selection</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="ClassRef">
+                @foreach(var Class in Model.classes) {
+                    <option value=@Class.Name>@Class.Name</option>
+                }
+            </select>
+            </div>
+            
+            <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">SELECT</button>
+            </div>
+        </div>
+    </form>
+ 
+    <div class="row mt-4" id="selection-students-wrapper">
+        <div class="col-12">
+        @if(Model.students != null) {
+            @foreach (var student in Model.students)
+            {
+                <ul class="list-group">
+ 
+                        <li class = "list-group-item justify-content-between align-items-center"> 
+                            <div class="d-flex align-items-center">
+                                <div class="mr-3 avatar">@String.Format("{0}{1}", @student.firstName.ToUpper()[0], @student.secondName.ToUpper()[0])</div>
+                                <div class="">@student.secondName, @student.firstName</div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="mr-4 student-achievement-button">Achievement</div>
+                                <div class="student-endeavour-button">Endeavour</div>
+                            </div>
+                            
+                        </li>
+                </ul>
+            }
+        }
+        </div>
+    </div>
+</div> *@

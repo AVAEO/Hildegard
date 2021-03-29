@@ -1,9 +1,8 @@
-﻿@* @model List<Hildi.Models.HClass>  *@
-@using Htest.Controllers
-@model StudentClassesDTO
+﻿@* @model List<Hildi.Models.HClass> 
+@model Hildi.Controllers.StudentSelectionDTO
 @{
     ViewData["Title"] = "Home Page";
-    HClass selectedClass = null;
+    var selectedClass = "";
     if(Model.SelectedClass != null) {
         selectedClass = Model.SelectedClass;
     }
@@ -67,13 +66,13 @@
                             <div class="input-group-text"><i class="fas fa-circle-notch fa-spin"></i></div>
                         </div>  
                        
-                        <select class="custom-select mr-sm-2" id="ClassSelect" name="classRef">
-                            @foreach(var Class in Model.classes) {
-                                @if(Class == selectedClass) {
-                                    <option selected value=@Class.Name>@Class.Name</option>
+                        <select class="custom-select mr-sm-2" id="ClassSelect" name="selectedClass">
+                            @foreach(var hclass in Model.Teacher.references) {
+                                @if(hclass == selectedClass) {
+                                    <option selected value=@hclass>@hclass</option>
                                 }
                                 else {
-                                    <option value=@Class.Name>@Class.Name</option>
+                                    <option value=@hclass>@hclass</option>
                                 }
                             }
                         </select>
@@ -86,8 +85,8 @@
         </div>
         <div class="row mt-4" id="selection-students-wrapper">
             <div class="col-12">
-            @if(Model.students != null) {
-                @foreach (var student in Model.students)
+            @if(Model.Students != null) {
+                @foreach (var student in Model.Students)
                 {
                     <ul class="list-group">
                             <li class = "list-group-item justify-content-between align-items-center"> 
@@ -165,4 +164,4 @@
         });
 
      </script>
-}
+} *@

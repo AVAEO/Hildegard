@@ -16,11 +16,13 @@ namespace Htest.Controllers
     public class StudentClassesDTO{
         public List<HClass> classes {get;set;}
         public List<Student> students{get;set;}
+        public HClass SelectedClass{get;set;}
     }
 
     public class TeacherSubmitDTO{
         public string ClassRef{get;set;}
-        public string Teacher{get;set;}
+        //public string Teacher{get;set;}
+
     }
     public class TeacherController : Controller
     {
@@ -34,9 +36,14 @@ namespace Htest.Controllers
             var SClassDTO = new StudentClassesDTO();
             List<HClass> classes = helper.GetAllClassesForTeacher(teacherName);
             SClassDTO.classes = classes;
-            SClassDTO.students = null;
+            
+           SClassDTO.SelectedClass = classes[0];
+           List<Student> students = helper.GetStudentsForClass(SClassDTO.SelectedClass.Name);
+            SClassDTO.students = students;
             return View(SClassDTO);
+
         }     
+        
 
         [HttpPost]
         public IActionResult Index(TeacherSubmitDTO data){
