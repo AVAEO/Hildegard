@@ -145,7 +145,7 @@ namespace Htest.Data
 
         }
 
-        public List<Student> GetStudentsForClass(string classReference){
+        public List<Student> GetStudentsForClass(String classReference){
             var studentLines = ReadDataFromExcel(1);
             if (studentLines != null)
             {
@@ -191,7 +191,7 @@ namespace Htest.Data
                         {
                             var reference = line[1];
                             //Guid ID = Guid.NewGuid();
-                            int ID = 0;
+                            string ID = "0";
                             HClass TeacherClass = new HClass{                  
                                 Id = ID,
                                 Name = reference,
@@ -205,13 +205,7 @@ namespace Htest.Data
             }
             else{
                 return null;
-            }
-
+                }
         }
-
-
-
-         
-
     }
 }

@@ -110,7 +110,9 @@
 </div>
 <!-- Position it -->
 <div style="position: fixed; top: 90px; right: 40px;">
-    <div id="achievement-award-toast" class="toast" data-delay="4000" style="">
+    <!-- add d-none as a hack to prevent items below toast not being clickable -->
+    <!-- need to use with some javascript as well -->
+    <div id="achievement-award-toast" class="toast d-none" data-delay="4000" style=""> 
         <div class="toast-header">
         <strong class="mr-auto text-primary">Information</strong>
         </div>
@@ -119,7 +121,9 @@
         </div>
     </div>
 
-    <div id="endeavour-award-toast" class="toast" data-delay="4000" style="">
+    <!-- add d-none as a hack to prevent items below toast not being clickable -->
+    <!-- need to use with some javascript as well -->
+    <div id="endeavour-award-toast" class="toast d-none" data-delay="4000" style="">
         <div class="toast-header">
         <strong class="mr-auto text-primary">Information</strong>
         </div>
@@ -131,6 +135,8 @@
 
 @section Scripts {
     <script>
+        let endeavourSelectionNode = null
+        let achievementSelectionNode = null
         $(document).ready(function() {
            
             $(".input-group-text i").removeClass("fa-circle-notch fa-spin").addClass("fa-list")
@@ -142,26 +148,97 @@
             });
 
             $(".student-achievement-button").on("click", function() {
-                $(".student-achievement-button").each(function(index, value) {
-                    $(this).css({"font-weight": "normal", "color": "#bbb"})
-                    $(this).closest("li").find(".student-name").css({"font-weight": "normal", "color": "#bbb"});
-                }) 
-                $(this).css({"font-weight": "bold", "color": "#2196f3"})
-                var li = $(this).closest("li").find(".student-name");
-                $(li).css({"font-weight": "bold", "color": "#2196f3"})
-                $('#achievement-award-toast').toast('show')
+                const tempachievementSelectionNode = achievementSelectionNode
+                if (achievementSelectionNode !== null) {
+                    $(achievementSelectionNode).find(".student-achievement-button").css({"font-weight": "normal", "color": "#bbb"})
+                    $(achievementSelectionNode).find(".student-name").css({"font-weight": "normal", "color": "#000"})
+                }
+                achievementSelectionNode = $(this).closest("li")
+                $(achievementSelectionNode).find(".student-achievement-button").css({"font-weight": "bold", "color": "#2196f3"})
+                $(achievementSelectionNode).find(".student-name").css({"font-weight": "bold", "color": "#2196f3"}) 
+
+                // Format the response for POSTing
+                const data = {
+                    Id: 1,
+                    Type: "achievement"
+                }
+
+                // POST the data back - we expect JSON back ("application/json") 
+                // although at the moment, we are not actually sending anything back
+                // just success or error codes to fire the done or fail functions.
+                $.post( "/teacher/saveaward", data, "application/json" )
+                .done(function() {
+                    $('#achievement-award-toast').toast('show')
+                })
+                .fail(function() {
+                    // first undo the formatting for the newly selected node
+                    $(achievementSelectionNode).find(".student-achievement-button").css({"font-weight": "normal", "color": "#bbb"})
+                    $(achievementSelectionNode).find(".student-name").css({"font-weight": "normal", "color": "#000"})
+
+                    // now reset the selected node back to the one it was
+                    achievementSelectionNode = tempachievementSelectionNode
+                    $(achievementSelectionNode).find(".student-achievement-button").css({"font-weight": "bold", "color": "#2196f3"})
+                    $(achievementSelectionNode).find(".student-name").css({"font-weight": "bold", "color": "#2196f3"}) 
+                    alert( "There was an error saving the data" );
+                })
+                .always(function() {
+                    console.log("finished saving award")
+                });
+                            
+                
             })
 
             $(".student-endeavour-button").on("click", function() {
-                 $(".student-endeavour-button").each(function(index, value) {
-                    $(this).css({"font-weight": "normal", "color": "#bbb"})
-                    $(this).closest("li").find(".student-name").css({"font-weight": "normal", "color": "#bbb"});
+
+                const tempendeavourSelectionNode = endeavourSelectionNode
+                if (endeavourSelectionNode !== null) {
+                    $(endeavourSelectionNode).find(".student-endeavour-button").css({"font-weight": "normal", "color": "#bbb"})
+                    $(endeavourSelectionNode).find(".student-name").css({"font-weight": "normal", "color": "#000"})
+                }
+                endeavourSelectionNode = $(this).closest("li")
+                $(endeavourSelectionNode).find(".student-endeavour-button").css({"font-weight": "bold", "color": "#2196f3"})
+                $(endeavourSelectionNode).find(".student-name").css({"font-weight": "bold", "color": "#2196f3"}) 
+
+                
+                // Format the response for POSTing
+                const data = {
+                    Id: 1,
+                    Type: "endeavour"
+                }
+
+                // POST the data back
+                $.post( "/teacher/saveaward", data, "application/json" )
+                .done(function() {
+                    $('#endeavour-award-toast').toast('show')
                 })
-                $(this).css({"font-weight": "bold", "color": "#2196f3"})
-                 var li = $(this).closest("li").find(".student-name");
-                $(li).css({"font-weight": "bold", "color": "#2196f3"})
-                $('#endeavour-award-toast').toast('show')
+                .fail(function() {
+                    // first undo the formatting for the newly selected node
+                    $(endeavourSelectionNode).find(".student-endeavour-button").css({"font-weight": "normal", "color": "#bbb"})
+                    $(endeavourSelectionNode).find(".student-name").css({"font-weight": "normal", "color": "#000"})
+
+                    // now reset the selected node back to the one it was
+                    endeavourSelectionNode = tempendeavourSelectionNode
+                    $(endeavourSelectionNode).find(".student-endeavour-button").css({"font-weight": "bold", "color": "#2196f3"})
+                    $(endeavourSelectionNode).find(".student-name").css({"font-weight": "bold", "color": "#2196f3"}) 
+                    alert( "There was an error saving the data" );
+                })
+                .always(function() {
+                    console.log("finished saving award")
+                });
             })
+
+
+            // fix the issue with Toasts covering the select box and not being visible
+            // this is a hack !!! must add class d-none to the toast class in html
+            // https://stackoverflow.com/a/61256117
+            $("#endeavour-award-toast, #achievement-award-toast").on("show.bs.toast", function() {
+                $(this).removeClass("d-none");
+            })
+            $("#endeavour-award-toast, #achievement-award-toast").on("hidden.bs.toast", function() {
+                $(this).addClass("d-none");
+            })
+            
+
         });
 
      </script>

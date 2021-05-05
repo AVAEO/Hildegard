@@ -1,0 +1,314 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    #admin-dashboard-wrapper .card {
+        border-radius: 0 !important;
+    }
+
+    #admin-dashboard-wrapper .card .progress {
+        border-radius: 0 !important;
+    }
+
+    /*
+    #admin-dashboard-wrapper .accordion>.card .row {
+        margin-bottom: 0.5rem;
+    }
+
+    #admin-dashboard-wrapper .accordion>.card {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+        border-radius: 0 !important;
+    }
+
+    #admin-dashboard-wrapper .accordion>.card .card-header {
+        box-shadow: none;
+        background-color: #fff;
+        border-bottom: none;
+        padding-left: 0.5rem;
+        padding-bottom: 0.6rem;
+    }
+
+    #admin-dashboard-wrapper .accordion>.card .card-body {
+        padding-top: 0.5rem;
+    }
+
+    #admin-dashboard-wrapper .accordion>.card .card-header h2 button {
+        font-weight: bold;
+    }
+
+    #admin-dashboard-wrapper .accordion>.card .card-header .btn.focus,
+    #admin-dashboard-wrapper .accordion>.card .card-header .btn:focus {
+        box-shadow: none
+    }
+
+    #admin-dashboard-wrapper #btn-toggle {
+        width: 7rem;
+    }
+    */
+</style>
+
+<div id="admin-dashboard-wrapper">
+    <div class="d-flex align-items-center justify-content-between">
+        <h3 class="my-3">Statistics</h3>
+        <!--
+        <button id="btn-toggle" class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse"
+            aria-expanded="true" aria-controls="collapseOne collapseTwo">Collapse All</button>
+    -->
+    </div>
+
+    <section id="wholeshool" class="card  shadow-sm mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col mb-2">
+                    <h6>Whole School</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 45%">45</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 55%">55</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subjects" class="card  shadow-sm mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col mb-2">
+                    <h6>Subjects</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    Maths
+                </div>
+                <div class="col-12">
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 33%">33</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 67%">67</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    English
+                </div>
+                <div class="col-12">
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 42%">42</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 58%">58</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    Science
+                </div>
+                <div class="col-12">
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 65%">65</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 35%">35</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teachers" class="card shadow-sm">
+        <div class="card-body">
+            <div class="row">
+                <div class="col mb-2">
+                    <h6>Teachers</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    Andrews, Jenny
+                </div>
+                <div class="col-12">
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 49%">49</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 51%">51</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    Depledge, Adam
+                </div>
+                <div class="col-12">
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%">50</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%">50</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    Tutor, Teacher
+                </div>
+                <div class="col-12">
+                    <div class="progress mb-1">
+                        
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 45%">45</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 55%">55</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+
+    <div class="accordion" id="accordionExample">
+        <div class="card shadow-sm">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Whole School
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show multi-collapse" aria-labelledby="headingOne"
+                >
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%">45</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 55%">55</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card shadow-sm">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Subjects
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show multi-collapse" aria-labelledby="headingTwo"
+                >
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            Maths
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 33%">33</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 67%">67</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            English
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 42%">42</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 58%">58</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            Science
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%">65</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 35%">35</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card shadow-sm">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Teachers
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse show multi-collapse" aria-labelledby="headingThree"
+                >
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            Andrews, Jenny
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 49%">49</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 51%">51</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            Depledge, Adam
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%">50</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%">50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            Tutor, Teacher
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%">45</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 55%">55</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+
+</div>
+
+@section Scripts {
+<script>
+
+    $(document).ready(function () {
+        $("#btn-toggle").on("click", function () {
+            if ($(this).text() == "Expand All") {
+                $(this).text("Collapse All")
+            }
+            else {
+                $(this).text("Expand All")
+            }
+        })
+    })
+</script>
+}

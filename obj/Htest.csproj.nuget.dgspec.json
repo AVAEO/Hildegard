@@ -41,6 +41,10 @@
             "EPPlus": {
               "target": "Package",
               "version": "[5.5.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.5, )"
             }
           },
           "imports": [

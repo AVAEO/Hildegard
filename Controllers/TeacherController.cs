@@ -24,8 +24,23 @@ namespace Htest.Controllers
         //public string Teacher{get;set;}
 
     }
+
     public class TeacherController : Controller
     {
+        [HttpPost]
+
+        public IActionResult saveaward(int Id, string type)
+        {
+            if (type != null){
+                return Ok();
+            }
+            else{
+                return NotFound();
+            }
+            
+        }
+
+
         string teacherName = @"Adrian Blacker"; 
         //string className = @"7RED/Ar";
 
@@ -37,8 +52,8 @@ namespace Htest.Controllers
             List<HClass> classes = helper.GetAllClassesForTeacher(teacherName);
             SClassDTO.classes = classes;
             
-           SClassDTO.SelectedClass = classes[0];
-           List<Student> students = helper.GetStudentsForClass(SClassDTO.SelectedClass.Name);
+            SClassDTO.SelectedClass = classes[0];
+            List<Student> students = helper.GetStudentsForClass(SClassDTO.SelectedClass.Name);
             SClassDTO.students = students;
             return View(SClassDTO);
 
