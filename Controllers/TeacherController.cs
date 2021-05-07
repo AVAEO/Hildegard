@@ -27,7 +27,8 @@ namespace Htest.Controllers
 
     public class TeacherController : Controller
     {
-        [HttpPost]
+
+       [HttpPost]
 
         public IActionResult saveaward(int Id, string type)
         {
